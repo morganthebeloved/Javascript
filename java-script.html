@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <style>
+     #morgan {
+            text-shadow: 2px 2px blue;
+        }
+
+        .bash {
+            color: #198754;
+            text-transform: capitalize;
+            font-family: monospace;
+            font-size: 24px;
+        }
+  </style>
+</head>
+<body class="text-center" style="color: gold; overflow-x: hidden; font-family: monospace;">
+  <h1 class="fs-1 font-monospace figure-caption" id="morgan">MORGAN JAVASCRIPT PROJECT</h1>
+  <h2 id="tim" class="text-center fw-bold pt-2 fs-1"></h2>
+  <br>
+  <div class=" border m-3" style="background: blue;">
+      <div class="container">
+          <div class="row ">
+            <div class="col-lg py-3">
+              <div class="form-control-sm p-2 float-lg-start">
+                  <h5 id="ponit" class="fw-semibold">INVESTMENT CALCULATOR</h5>
+                  <br />
+                  <label>HOW MUCH DO YOU WANT TO INVEST</label><br />
+                  <input class="form-control-sm" id="a" type="" placeholder="Investment Amount" /><br /><br />
+
+                  <label>INTEREST RATE in %age</label><br />
+                  <input class="form-control-sm" disabled value="10%" /><br /><br />
+                  <label>DURATION IN YEARS</label><br />
+                  <select id="b">
+                      <option selected>Duration</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                  </select><br /><br />
+                  <button id="temp">CALCULATE</button>
+                  <p>Your Investment Will Yield <span id="axis">0</span> in <span id="iod">0</span> years</p>
+              </div>
+          </div>
+
+              <div class="col-lg py-5">
+                  <div class="form-control-sm p-2 float-lg-start">
+                      <h5 class="fw-semibold">SIMPLE CALCULATOR</h5><br />
+                      <input class="form-control-sm" type="text" id="1"><br>
+                      <span id="ase">&nbsp;</span><br>
+                      <input class="form-control-sm" type="text" id="2"><br>
+                      <span id="ans">&nbsp;</span><br>
+                      <input type="button" onclick="jay()" value="+"></input>&nbsp;
+                      <input type="button" onclick="jos()" value="-"></input>&nbsp;
+                      <input type="button" onclick="jah()" value="*"></input>&nbsp;
+                      <input type="button" onclick="jog()" value="/"></input>
+                      <br>
+                  </div>
+              </div>
+             
+              <div class="col-lg">
+                  <div class="form-control-sm p-2 float-lg-start">
+                      <h5 class="fw-semibold">LOAN CALCULATOR</h5>
+                      <br />
+                      <label>HOW MUCH DO YOU WANT TO BORROW</label><br />
+                      <input class="form-control-sm" id="atr" type="" placeholder="Loan Amount" /><br /><br />
+                      <label>INTEREST RATE in %age</label><br />
+                      <input class="form-control-sm" id="ctr" type="" placeholder="Interest" /><br /><br />
+                      <label>LOAN DURATION PER YEAR</label><br />
+                      <input class="form-control-sm" id="bdt" type="" placeholder="Duration" />
+                      <br /><br />
+                      <label for="">REPAYMENT METHOD</label><br />
+                      <select id="dtr">
+                          <option value="1" selected>annual</option>
+                          <option value="12">monthly</option>
+                      </select>
+                      <br /><br />
+                      <button onclick=" per()">CALCULATE</button>
+                      <p id="axe"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br /><br /><br />
+
+  <div class="row text-start pt-4 pb-lg-6 border m-3" style="background-color: blue; padding-top: 5%;">
+    <div class="col-lg">
+        <div class="p-6">
+            <h3>How Old is Nigeria</h3>
+            <div class="navbar p-2">
+                <div class="d-flex">
+                    <input class="form-control me-2" id="aero" type="text" placeholder="How Old is Nigeria">
+                    <button class="btn btn-outline-danger" onclick="fino()" type="submit">Guess</button>
+                </div>
+            </div>
+            <h6 class="text-capitalize fs-5 font-monospace text-muted" id="tyu" ></h6>
+
+        </div>
+    </div>
+    <div class="col-lg">
+        <div class="pagebody pb-lg-6">
+          <div style="width:500px; padding: 20px" >
+            <h2> GUESS MY NUMBER GAME </h2>
+            
+            <h1 class='message' > </h1>
+            
+            <input class='mynumber' placeholder='guess my age'> 
+            
+            <h3 class='mynumber' > The number is ??</h3>
+            
+            <button class='check'>check</button>
+      
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<script>
+    
+    // function morgan() {
+    //             alert("WELCOME TO MORGAN THEBELOVED JAVASCRIPT PROJCET<br>PICHERE DIRALOMA DIRONBETA");
+    //         }
+    //         setInterval(morgan,20000);
+
+    // GREETINGS
+    let d = new Date().getDay();
+        if (d == 0) {
+            alert("it is sunday lets go to church")
+        }
+        else if (d <=4) {
+            let days =["sunday",'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            let b= days [d];
+            alert('today is ${b},get up and gonto work')
+        }
+        else if (d == 5){
+            alert('SIUUUUU,IT FRIDAY MY BELOVED')
+        }
+        // END OF GREETING
+     // TIME
+     function nowTime() {
+            let hh = new Date().getHours()
+            let mm = new Date().getMinutes()
+            let ss = new Date().getSeconds()
+            let session = 'AM';
+
+            if (hh == 0) {
+                hh = 12;
+            }
+            if (hh > 12) {
+                hh = hh - 12;
+                session = "PM"
+            }
+            hh = (hh < 10) ? "0" + hh : hh;
+            mm = (mm < 10) ? "0" + mm : mm;
+            ss = (ss < 10) ? "0" + ss : ss;
+
+            let time = hh + ":" + mm + ":" + ss + " " + session
+
+            document.getElementById('tim').innerHTML = time;
+            setTimeout(nowTime, 1000)
+
+        }
+        nowTime();
+        // TIME END
+
+        // let a = new Date().getDay()
+        // switch (a) {
+        //     case 0:
+        //         alert("You Should Go To Church")
+        //         break;
+        //     case 5:
+        //         alert("Thank God it' Friday")
+        //         break;
+        //     case 6:
+        //         alert("Go To Party")
+
+        //     default:
+        //         alert("Go To Work")
+        //         break;
+        // }
+
+
+
+   // CALCULATOR
+        // SIMPLE CALCULATOR
+        function jay() {
+            let num1 = document.getElementById("1").value;
+            let num2 = document.getElementById("2").value;
+            let sum = Number(num1) + Number(num2);
+            document.getElementById("ase").innerHTML = " +";
+            document.getElementById("ans").innerHTML = "= " + sum;
+        }
+        function jos() {
+            num1 = document.getElementById("1").value;
+            num2 = document.getElementById("2").value;
+            let sum = Number(num1) - Number(num2);
+            document.getElementById("ase").innerHTML = " -";
+            document.getElementById("ans").innerHTML = "= " + sum;
+        }
+        function jah() {
+            num1 = document.getElementById("1").value;
+            num2 = document.getElementById("2").value;
+            let sum = Number(num1) * Number(num2);
+            document.getElementById("ase").innerHTML = " *";
+            document.getElementById("ans").innerHTML = "= " + sum;
+        }
+        function jog() {
+            num1 = document.getElementById("1").value;
+            num2 = document.getElementById("2").value;
+            let sum = Number(num1) / Number(num2);
+            document.getElementById("ase").innerHTML = " /";
+            document.getElementById("ans").innerHTML = "= " + sum;
+        }
+        // SIMPLE CALCULATOR END
+
+        // INVESTMENT CALCULATOR
+        document.getElementById("temp").addEventListener("click", cas)
+        function cas() {
+
+
+            let a = Number(document.getElementById("a").value);
+            let b = document.getElementById("b").value;
+
+            let interest = a / 10;
+            let years = interest * b;
+            let total = a + years;
+            document.getElementById("axis").innerHTML =
+                total;
+            document.getElementById("iod").innerHTML =
+                b;
+        }
+        // INVESTMENT CALCULATOR END
+
+         // LOAN CALCULATOR 
+         function per() {
+            let a = Number(document.getElementById("atr").value);
+            let b = Number(document.getElementById("bdt").value);
+            let c = Number(document.getElementById("ctr").value);
+            let d = Number(document.getElementById("dtr").value);
+
+            if (d == 12) {
+                let d = Number(document.getElementById("dtr").value);
+                let interest = a / c;
+                let years = interest * b;
+                let total = a + years;
+                let u = b * 12
+                let e = total / 12
+                let f = Math.round(e)
+                let z = f / b
+                document.getElementById("axe").innerHTML = "You will be paying" + " " + '#' + z + " " + "monthly for" + " " + u + " " + "month(s)"
+            }
+            else if (d == 1) {
+                let d = Number(document.getElementById("dtr").value);
+                let interest = a / c;
+                let years = interest * b;
+                let total = a + years;
+                let r = total / b
+                let h = Math.round(r)
+                document.getElementById("axe").innerHTML = "You will be paying" + " " + '#' + r + " " + "yearly for" + " " + b + " " + "year(s)";
+            }
+            else {
+                "Invalid Input"
+            }
+        }
+        // LOAN CALCULATOR END 
+        // CALCULATOR END 
+
+         // GUESS NIGERIA AGE START
+         function fino() {
+            let b = Number(document.getElementById('aero').value)
+            switch (b) {
+                case 59:
+                    document.getElementById("tyu").innerHTML = "almost correct"
+                    break;
+                case 61:
+                    document.getElementById("tyu").innerHTML = 'you are close'
+                    break;
+                case 62:
+                    document.getElementById("tyu").innerHTML = 'correct'
+                    document.getElementById("tyu").className = 'bash'
+                    break;
+
+                default:
+                    document.getElementById("tyu").innerHTML = 'you are wrong'
+                    break;
+            }
+        }
+        // GUESS NIGERIA AGE END
+
+        // GUESS MY AGE GAME
+        const secretNumber = Math.trunc(Math.random()*20) + 1;
+      
+      const tjay= function(){
+      const gues = Number(document.querySelector('.mynumber').value);
+      
+      if(!gues||isNaN(gues)|| gues>20){
+      document.querySelector('.message').textContent= "make sure to enter a valid number btw 1 and 20 only";
+      document.querySelector('.message').style.color="red";
+      
+      }else if(gues===secretNumber){
+      document.querySelector('.message').textContent= "yeah, you are correct";
+      document.querySelector('#pagebody').style.backgroundColor="green";
+      document.querySelector('.mynumber').textContent = `The number is ${secretNumber}`;
+      document.querySelector('.message').style.color="white"
+      
+      }else if(gues<secretNumber){
+      document.querySelector('.message').textContent= "your gues is too low";
+      document.querySelector('.message').style.color="blue"
+      }else if(gues>secretNumber){
+      document.querySelector('.message').textContent= "your gues is too high";
+      document.querySelector('.message').style.color="tomato"
+      }else{ 
+        document.querySelector('.message').textContent='awwwwn, you are wrong';
+        document.querySelector('.message').style.color="red"
+      }
+       }
+
+       document.querySelector('.check').addEventListener('click', tjay);
+ 
+       document.querySelector('.mynumber').addEventListener('click', tjay);
+      
+
+</script>
+    
+</body>
+</html>
